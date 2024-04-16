@@ -12,7 +12,32 @@
             <div>
                 <h3>Add field</h3>
                 <form>
-                    
+                    <fieldset>
+                        <legend>Type of field</legend>
+                        <div>
+                            <input id="radio-text" type="radio" name="add-field" value="text" checked>
+                            <label for="radio-text">Text</label>
+                        </div>
+
+                        <div>
+                            <input id="radio-select" type="radio" name="add-field" value="select">
+                            <label for="radio-select">Select</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Field details</legend>
+                        <div>
+                            <label for="field-name">Name</label>
+                            <input id="field-name" type="text">
+                        </div>
+
+                        <div>
+                            <label for="select-items">Selectable items</label>
+                            <textarea id="select-items" placeholder='Write the selectable items separated with ";". Example: 1;2;3;4;5' disabled></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit">Add</button>
                 </form>
             </div>
 
@@ -37,5 +62,6 @@
         </div>
         
         <script type="text/javascript" src="js/jquery/jquery-3.7.1.min.js"></script>
+        <script type="text/javascript" src="js/addField.js"></script>
     </body>
 </html>
