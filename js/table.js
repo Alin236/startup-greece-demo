@@ -13,6 +13,8 @@ function createTable(){
         headerRow.append(column);
         ids.push(field.id);
     });
+
+    tableHeader.append(headerRow);
     
     data.forEach(function(d){
         addTableRowWithIds(d, ids);
