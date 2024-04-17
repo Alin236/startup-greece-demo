@@ -1,0 +1,5 @@
+id;name;type;options
+1;Name;text;
+2;Age;text;
+3;Color;select;Red|Blue|Yellow|Pink
+4;Fruit;select;Apple|Orange|Banana|None
