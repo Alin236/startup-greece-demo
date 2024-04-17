@@ -127,6 +127,9 @@ function decodeFields(fieldsString){
         return fieldObject;
     });
 
+    // Ids are transformed in numbers.
+    fields.forEach(field => field.id = Number(field.id));
+
     // An additional process is necessary for the "options" property.
     fields.forEach(field => field.options = field.options.split(optionSeparator));
     
