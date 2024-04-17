@@ -105,6 +105,7 @@ importFieldsInput.on('change', function(event){
     fileReader.onload = function(){
         let fieldsString = fileReader.result;
         fields = decodeFields(fieldsString);
+        nextId = fields[fields.length - 1].id + 1;
         createDeleteFieldForm();
         createForm();
         createTable();
