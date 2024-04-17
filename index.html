@@ -68,6 +68,22 @@
         </div>
 
         <div>
+            <h2>Save data</h2>
+            <div>
+                <label for="importFieldsInput">Import fields</label>
+                <input id="importFieldsInput" type="file"/>
+                <label for="importFieldsInput">Import data</label>
+                <input id="importDataInput" type="file"/>
+            </div>
+            <div>
+                <a id="exportFieldsLink" href="" download="fields">Export fields</a>
+                <a id="exportDataLink" href="" download="data">Export data</a>
+                <button id="exportFieldsButton">Export fields</button>
+                <button id="exportDataButton">Export data</button>
+            </div>
+        </div>
+
+        <div>
             <h2>Data table</h2>
             <table id="table">
                 <thead>
@@ -86,5 +102,6 @@
         <script type="text/javascript" src="js/form.js"></script>
         <script type="text/javascript" src="js/fakeData.js"></script>
         <script type="text/javascript" src="js/table.js"></script>
+        <script type="text/javascript" src="js/saveFile.js"></script>
     </body>
 </html>
