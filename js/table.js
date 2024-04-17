@@ -15,15 +15,25 @@ function createTable(){
     });
     
     data.forEach(function(d){
-        let row = $('<tr>');
-
-        ids.forEach(function(id){
-            let column = $('<td>').html(d[id]);
-            row.append(column);
-        })
-
-        tableBody.append(row);
+        addTableRowWithIds(d, ids);
     });
 }
 
 createTable();
+
+function addTableRow(d){
+    ids = fields.map(field => field['id']);
+
+    addTableRowWithIds(d, ids);
+}
+
+function addTableRowWithIds(d, ids){
+    let row = $('<tr>');
+
+    ids.forEach(function(id){
+        let column = $('<td>').html(d[id]);
+        row.append(column);
+    })
+
+    tableBody.append(row);
+}
