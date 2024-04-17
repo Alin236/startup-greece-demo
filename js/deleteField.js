@@ -19,7 +19,7 @@ function createDeleteFieldForm(){
 
 createDeleteFieldForm();
 
-// This function cleans the options in the select of the "Delete field" form.
+// This function removes the options in the select of the "Delete field" form.
 function destroyDeleteFieldForm(){
     selectDeleteField.html('');
 }
@@ -42,7 +42,7 @@ function submitDeleteFieldForm(){
     createTable();
 }
 
-// This event handler manage the submission of the "Delete field" form.
+// This event handler manages the submission of the "Delete field" form.
 $('#delete-field-form > button').on('click', function(event){
     event.preventDefault();
     submitDeleteFieldForm();

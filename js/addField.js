@@ -4,7 +4,7 @@ let inputName = $('#field-name');
 let inputItems = $('#select-items');
 let separator = ';';
 
-// This event handler change the "Add field" form according to the type of field the user want to add.
+// This event handler changes the "Add field" form according to the type of field the user want to add.
 $('#add-field-form :radio').on('click', function(event){
     $('#select-items').prop('disabled', event.target.value != 'select');
 });
@@ -31,14 +31,14 @@ function submitAddFieldForm(){
     nextId++;
 
     fields.push(field);
-    
+
     createForm();
     createTable();
     createDeleteFieldForm();
     resetAddFieldForm();
 }
 
-// This event handler manage the submission of the "Add field" form.
+// This event handler manages the submission of the "Add field" form.
 $('#add-field-form > button').on('click', function(event){
     event.preventDefault();
     submitAddFieldForm();
