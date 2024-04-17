@@ -1,5 +1,5 @@
 // let fields = [];
-// let data = [];
+let data = [];
 let tableHeader = $('#table > thead');
 let tableBody = $('#table > tbody');
 
