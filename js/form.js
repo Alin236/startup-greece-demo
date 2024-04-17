@@ -3,6 +3,7 @@
 let dataForm = $('#data-form > div').first();
 
 function createForm(){
+    destroyForm();
     fields.forEach(function(field){
         let div = $('<div>');
         let label = $('<label>')
@@ -61,4 +62,8 @@ function resetForm(){
         let firstOption = select.children().first().val();
         select.val(firstOption);
     });
+}
+
+function destroyForm(){
+    dataForm.html('');
 }

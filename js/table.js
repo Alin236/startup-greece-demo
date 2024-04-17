@@ -3,8 +3,8 @@
 let tableHeader = $('#table > thead');
 let tableBody = $('#table > tbody');
 
-
 function createTable(){
+    destroyTable();
     let headerRow = $('<tr>');
     let ids = [];
 
@@ -38,4 +38,9 @@ function addTableRowWithIds(d, ids){
     })
 
     tableBody.append(row);
+}
+
+function destroyTable(){
+    tableHeader.html('');
+    tableBody.html('');
 }
