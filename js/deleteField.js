@@ -3,6 +3,7 @@
 let selectDeleteField = $('#delete-field');
 let selectDefaultText = selectDeleteField.children().first().html();
 
+// This function create/recreate the "Delete field" form according to the fields variable.
 function createDeleteFieldForm(){
     destroyDeleteFieldForm();
     let option = $('<option>').html(selectDefaultText);
@@ -18,10 +19,14 @@ function createDeleteFieldForm(){
 
 createDeleteFieldForm();
 
+// This function cleans the options in the select of the "Delete field" form.
 function destroyDeleteFieldForm(){
     selectDeleteField.html('');
 }
 
+// This function is called when the "Delete field" form is submitted.
+// It gathers the id of the field that must be deleted and remove it from the fields variable.
+// It also calls functions that recreate the custom form, the "Delete field" form and the data table.
 function submitDeleteFieldForm(){
     let fieldIdToDelete = selectDeleteField.val();
     if(fieldIdToDelete == selectDefaultText)
@@ -37,6 +42,7 @@ function submitDeleteFieldForm(){
     createTable();
 }
 
+// This event handler manage the submission of the "Delete field" form.
 $('#delete-field-form > button').on('click', function(event){
     event.preventDefault();
     submitDeleteFieldForm();
