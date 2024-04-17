@@ -45,6 +45,10 @@ Being a front-end only solution, in order to store the data, the user can export
 In the .csv file, the custom fields will be stored in a table where the column names are id, name, type and options. The id is automatically given, the name is the one inserted by the user, the type is either text or select and the options represent the selectable options for a select field.
 In the .csv file, the data will be stored in a table where the column names are numbers. The numbers represent the ids of the custom fields.
 
+The columns are separated by ";".
+The options for a select field are separated by "|".
+
+Two example .csv can be found in the [save folder](save) named [fields.example.csv](fields.example.csv) and [data.example.csv](data.example.csv).
 
 ## Design
 No CSS has been used.
