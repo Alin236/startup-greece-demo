@@ -27,6 +27,7 @@ function submitAddFieldForm(){
     fields.push(field);
     createForm();
     createTable();
+    createDeleteFieldForm();
     resetAddFieldForm();
 }
 

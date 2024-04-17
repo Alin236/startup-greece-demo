@@ -4,7 +4,7 @@ let selectDeleteField = $('#delete-field');
 let selectDefaultText = selectDeleteField.html();
 
 function createDeleteFieldForm(){
-    selectDeleteField.html('');
+    destroyDeleteFieldForm();
     let option = $('<option>').html(selectDefaultText);
     selectDeleteField.append(option);
 
@@ -17,3 +17,7 @@ function createDeleteFieldForm(){
 }
 
 createDeleteFieldForm();
+
+function destroyDeleteFieldForm(){
+    selectDeleteField.html('');
+}
