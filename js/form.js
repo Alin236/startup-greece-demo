@@ -1,9 +1,9 @@
 // let fields = [];
-// let data = [];
+let data = [];
 
 let dataForm = $('#data-form > div').first();
 
-// This function create/recreate the custom form according to the fields variable.
+// This function creates/recreates the custom form according to the fields variable.
 function createForm(){
     destroyForm();
 

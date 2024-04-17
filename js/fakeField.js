@@ -1,4 +1,4 @@
-// This is an example of fields. It is also used at the launch of the page to avoid having empty forms and header's table.
+// This is an example of fields. It is also used at the launch of the page to avoid having empty forms and table's header.
 let fields = [
     {id: 1, type: 'text', name: 'name'},
     {id: 2, type: 'text', name: 'age'},

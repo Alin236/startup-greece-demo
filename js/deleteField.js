@@ -3,7 +3,7 @@
 let selectDeleteField = $('#delete-field');
 let selectDefaultText = selectDeleteField.children().first().html();
 
-// This function create/recreate the "Delete field" form according to the fields variable.
+// This function creates/recreates the "Delete field" form according to the fields variable.
 function createDeleteFieldForm(){
     destroyDeleteFieldForm();
     let option = $('<option>').html(selectDefaultText);
