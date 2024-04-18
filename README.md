@@ -51,4 +51,4 @@ The options for a select field are separated by "|".
 Two example .csv can be found in the [save folder](save) named [fields.example.csv](fields.example.csv) and [data.example.csv](data.example.csv).
 
 ## Design
-No CSS has been used.
+A few amount of css is used, mainly to change the size and position of elements.
