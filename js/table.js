@@ -12,7 +12,7 @@ function createTable(){
     let ids = [];
 
     fields.forEach(function(field){
-        let column = $('<td>').html(field.name);
+        let column = $('<th>').html(field.name);
         headerRow.append(column);
         ids.push(field.id);
     });
