@@ -19,8 +19,6 @@ Tasks will be evaluated according to:
 - Understanding of tasks.
 
 # Solution
-I made a front-end only solution.
-
 ## Content
 The page contains:
 ### Forms
@@ -37,19 +35,26 @@ The table's header contains the name of the custom fields and will change when t
 ### Save data section
 A "Save data" section, where the user can save the custom fields and the data into .csv files.
 
+## Front-end only
+This solution is front-end only.
+
 ## Launch
 Being a front-end only solution, the page can be launched by opening the [index.html](index.html) file in a browser.
 
 ## Export/Import data
-Being a front-end only solution, in order to store the data, the user can export the custom fields and the data into 2 .csv files.
+Being a front-end only solution, in order to store the data, the user can export/import the custom fields and the data into 2 .csv files.
 
 In the .csv file, the custom fields will be stored in a table where the column names are id, name, type and options. The id is automatically given, the name is the one inserted by the user, the type is either text or select and the options represent the selectable options for a select field.
+
 In the .csv file, the data will be stored in a table where the column names are numbers. The numbers represent the ids of the custom fields.
 
 The columns are separated by ";".
 The options for a select field are separated by "|".
 
-Two example .csv can be found in the [save folder](save) named [fields.example.csv](fields.example.csv) and [data.example.csv](data.example.csv).
+Two examples .csv can be found in the [save folder](save) named [fields.example.csv](fields.example.csv) and [data.example.csv](data.example.csv).
 
 ## Design
-A few amount of css is used, mainly to change the size and position of elements.
+A few amount of css is used, mainly to add borders and to change the size and position of elements.
+
+## Library
+The only library used is jQuery.
