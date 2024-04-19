@@ -1,5 +1,6 @@
 // let fields = [];
 let data = [];
+// let columnSeparator = ';';
 
 let dataForm = $('#data-form > div').first();
 
@@ -49,7 +50,10 @@ function submitForm(){
     let d = {}
     inputs.each(function(_, input){
         input = $(input);
-        d[input.prop('name')] = input.val();
+        // The character columnSeparator is replaced by ",", because it is used to encode/decode the fields variable in order to import/export it.
+        let value = input.val().replaceAll(columnSeparator, ',');
+        let key = input.prop('name');
+        d[key] = value;
     })
     data.push(d);
     addTableRow(d);

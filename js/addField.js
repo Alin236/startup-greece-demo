@@ -4,6 +4,7 @@ let inputName = $('#field-name');
 let inputItems = $('#select-items');
 let separator = ';';
 // let optionSeparator = '|';
+// let columnSeparator = ';';
 
 // This event handler changes the "Add field" form according to the type of field the user want to add.
 $('#add-field-form :radio').on('click', function(event){
@@ -15,13 +16,14 @@ $('#add-field-form :radio').on('click', function(event){
 // It also calls functions that recreate the custom form, the "Delete field" form and the data table.
 function submitAddFieldForm(){
     let field = {};
-    let name = inputName.val();
+    // The character columnSeparator is replaced by ",", because it is used to encode/decode the fields variable in order to import/export it.
+    let name = inputName.val().replaceAll(columnSeparator, ',');
     field.name = name;
 
     let type;
     if(radioSelect.prop('checked')){
         type = 'select';
-        // The character optionSeparator are replaced by "-", because it is used to encode/decode the fields variable in order to import/export it.
+        // The character optionSeparator is replaced by "-", because it is used to encode/decode the fields variable in order to import/export it.
         let options = inputItems.val().replaceAll(optionSeparator, '-').split(separator);
         field.options = options;
     }
