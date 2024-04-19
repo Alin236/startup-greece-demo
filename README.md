@@ -22,8 +22,9 @@ Tasks will be evaluated according to:
 I made a front-end only solution.
 
 ## Content
+The page contains:
 ### Forms
-The page contains 3 forms:
+Three forms:
 - The custom form, where the user can add data to the data table. The custom form fields are modifiable via the "Add field" form and the "Delete field" form.
 - The "Add field" form, where the user can add fields to the custom form. The user can choose to add a text or select field and can name the field. In case of a select field the user can specify the selectable options.
 - The "Delete field" form, where the user can select one of the custom form field and delete it.
